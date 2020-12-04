@@ -105,11 +105,11 @@ This application is for the user to keep track of all the orders being placed. C
 ## SWOT Analysis
 
 ### Strengths:
--JS logic
+- JS logic
 ### Weaknesses:
--CSS, Styling 
+- CSS, Styling 
 
 ### Opportunities:
--I can see this as the backbone of an app a real reastaurant can use
+- I can see this as the backbone of an app a real reastaurant can use
 ### Threats:
--working with 2 different databases
+- working with 2 different databases
