@@ -5,8 +5,8 @@ URL TBD
 ## Project Description
 This Application will display the user with a menu of the avialable items and a place order prompt. It will then take their order and save it in a database for record keeping. 
 ## Wireframes
-![Home]("https://github.com/jpacheco008/julios-kitchen/blob/master/HomeWireFrame.png")
-![PlaceOrder]("https://github.com/jpacheco008/julios-kitchen/blob/master/PlaceOrderWireFrame.png")
+![Home](https://github.com/jpacheco008/julios-kitchen/blob/master/HomeWireFrame.png)
+![Order](https://github.com/jpacheco008/julios-kitchen/blob/master/PlaceOrderWireFrame.png)
 ![Recipt](https://user-images.githubusercontent.com/69394703/101185843-5eaa3b00-3620-11eb-9298-61a7ee4ea5d7.png)
 ## Component Hierarchy
 ![Hierarchy](https://github.com/jpacheco008/julios-kitchen/blob/master/Julio's%20Kitchen.png)
