@@ -7,7 +7,7 @@ This application is for the user to keep track of all the orders being placed. C
 ## Wireframes
 ![Home](https://github.com/jpacheco008/julios-kitchen/blob/master/HomeWireFrame.png)
 ![Order](https://github.com/jpacheco008/julios-kitchen/blob/master/PlaceOrderWireFrame.png)
-![Recipt](https://user-images.githubusercontent.com/69394703/101185843-5eaa3b00-3620-11eb-9298-61a7ee4ea5d7.png)
+![Recipt]()
 ## Component Hierarchy
 ![Hierarchy](https://github.com/jpacheco008/julios-kitchen/blob/master/Julio's%20Kitchen.png)
 
