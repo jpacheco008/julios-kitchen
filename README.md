@@ -7,7 +7,7 @@ This Application will display the user with a menu of the avialable items and a 
 ## Wireframes
 ![Wireframes](https://www.figma.com/file/B6JwBcryD6ZyyUdgTCsNbw/Julio-s-Kitchen?node-id=0%3A1)
 ## Component Hierarchy
-![Hierarchy](https://www.figma.com/file/HewDFWLl6x2zglW9z0zB2O/Julio-s-Kitchen-Hierarchy)
+![Hierarchy](https://github.com/jpacheco008/julios-kitchen/blob/master/Julio's%20Kitchen.png)
 
 ## API and Data Sample
 ```
