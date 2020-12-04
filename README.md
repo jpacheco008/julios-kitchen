@@ -98,7 +98,7 @@ This application is for the user to keep track of all the orders being placed. C
 
 | Day      | Deliverable                                | Status   |
 | -------- | ------------------------------------------ | -------- |
-|  Dec 4-6 | Proposal Approval / AirTable setup         |Incomplete|
+|  Dec 4-6 | Proposal Approval / AirTable setup         |Completed |
 |  Dec 7   | Render and connect database to app         |Incomplete|
 |  Dec 8   | Functional MVP                             |Incomplete|
 |  Dec 9   | Styling/MVP                                |Incomplete|
@@ -109,8 +109,8 @@ This application is for the user to keep track of all the orders being placed. C
 
 | Component                 | Priority | Estimated Time | Actual Time |
 | ------------------------- | :------: | :------------: | :---------: |
-| Proposal                  |    H     |      1HR       |             |        
-| Air Table build           |    H     |      3HR       |             |        
+| Proposal                  |    H     |      1HR       |     2HR     |        
+| Air Table build           |    H     |      3HR       |     2HR     |        
 | App setup                 |    H     |      1HR       |             |         
 | Connect App to Air Table  |    H     |      2HR       |             |         
 | Render Menu Items         |    H     |      3HR       |             | 
