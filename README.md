@@ -18,33 +18,32 @@ This application is for the user to keep track of all the orders being placed. C
         {
             "id": "recMwIzHcklifR2c3",
             "fields": {
-                "name": "Test",
-                "description": "Test",
-                "picture": "Test"
+                "picture": "https://i2.wp.com/www.eatthis.com/wp-content/uploads/2018/10/guacamole-mortar-pestle.jpg?resize=640%2C360&ssl=1",
+                "name": "Guacamole",
+                "description": "This Guacamole is the perfect start to any meal"
             },
             "createdTime": "2020-12-04T00:46:59.000Z"
         },
         {
             "id": "rec2f7SrFn94o2C26",
-            "fields": {},
-            "createdTime": "2020-12-04T00:46:59.000Z"
-        },
-        {
-            "id": "recGtHOFN0wJGjxWS",
-            "fields": {},
+            "fields": {
+                "picture": "https://assets.bonappetit.com/photos/58a34e1df12ac6e639bf24ae/16:9/w_2560%2Cc_limit/argentinian-beef-empanadas.jpg",
+                "description": "These Argentinian empanadas are so good you'll want them as a full meal",
+                "name": "Argentinian Beef Empanadas"
+            },
             "createdTime": "2020-12-04T00:46:59.000Z"
         }
     ],
-    "offset": "recGtHOFN0wJGjxWS"
+    "offset": "rec2f7SrFn94o2C26"
 }
 {
     "records": [
         {
             "id": "recVnREd7saNpEW2p",
             "fields": {
-                "name": "receptTest",
-                "order-name": "receptTest",
-                "order-number": "receptTest"
+                "order-number": "001",
+                "order-name": "Franchesca ",
+                "item": "Argentinian Beef Empanadas"
             },
             "createdTime": "2020-12-04T13:47:24.000Z"
         },
