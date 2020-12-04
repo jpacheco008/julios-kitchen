@@ -3,7 +3,7 @@
 URL TBD
 
 ## Project Description
-This Application will display the user with a menu of the avialable items and a place order prompt. It will then take their order and save it in a database for record keeping. 
+This application is for the user to keep track of all the orders being placed. Costumers will place their orders from a menu rendered from a database and after making their selections the order will be added to a second database. The second recive the name of the item and a unique number provided by a counter at submission. 
 ## Wireframes
 ![Home](https://github.com/jpacheco008/julios-kitchen/blob/master/HomeWireFrame.png)
 ![Order](https://github.com/jpacheco008/julios-kitchen/blob/master/PlaceOrderWireFrame.png)
@@ -37,6 +37,30 @@ This Application will display the user with a menu of the avialable items and a 
     ],
     "offset": "recGtHOFN0wJGjxWS"
 }
+{
+    "records": [
+        {
+            "id": "recVnREd7saNpEW2p",
+            "fields": {
+                "name": "receptTest",
+                "order-name": "receptTest",
+                "order-number": "receptTest"
+            },
+            "createdTime": "2020-12-04T13:47:24.000Z"
+        },
+        {
+            "id": "recozEpWvnb7FJeTQ",
+            "fields": {},
+            "createdTime": "2020-12-04T13:47:24.000Z"
+        },
+        {
+            "id": "reclFxeh88wqtKPbx",
+            "fields": {},
+            "createdTime": "2020-12-04T13:47:24.000Z"
+        }
+    ],
+    "offset": "reclFxeh88wqtKPbx"
+}
 ```
 
 ### MVP/PostMVP
@@ -45,9 +69,10 @@ This Application will display the user with a menu of the avialable items and a 
 -Navigatable links in between pages
 -Render Menu Items
 -Render place order form
--Upload placed order into database
+-Upload a single item order placed into second database
 #### PostMVP
 -A graphical display of most popular items, least favorite, ect
+-Add multiple items per order
 
 ## Project Schedule
 
@@ -87,6 +112,5 @@ This Application will display the user with a menu of the avialable items and a 
 
 ### Opportunities:
 -I can see this as the backbone of an app a real reastaurant can use
-
 ### Threats:
--I don't see a any at the moment (I'm sure I'll eat my words)
+-working with 2 different databases
