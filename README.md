@@ -7,13 +7,34 @@ This Application will display the user with a menu of the avialable items and a 
 ## Wireframes
 ![Wireframes](https://www.figma.com/file/B6JwBcryD6ZyyUdgTCsNbw/Julio-s-Kitchen?node-id=0%3A1)
 ## Component Hierarchy
-
+![Hierarchy](https://www.figma.com/file/HewDFWLl6x2zglW9z0zB2O/Julio-s-Kitchen-Hierarchy)
 
 ## API and Data Sample
-
-
 ```
-
+{
+    "records": [
+        {
+            "id": "recMwIzHcklifR2c3",
+            "fields": {
+                "name": "Test",
+                "description": "Test",
+                "picture": "Test"
+            },
+            "createdTime": "2020-12-04T00:46:59.000Z"
+        },
+        {
+            "id": "rec2f7SrFn94o2C26",
+            "fields": {},
+            "createdTime": "2020-12-04T00:46:59.000Z"
+        },
+        {
+            "id": "recGtHOFN0wJGjxWS",
+            "fields": {},
+            "createdTime": "2020-12-04T00:46:59.000Z"
+        }
+    ],
+    "offset": "recGtHOFN0wJGjxWS"
+}
 ```
 
 ### MVP/PostMVP
@@ -48,19 +69,22 @@ This Application will display the user with a menu of the avialable items and a 
 | Render Menu Items         |    H     |      3HR       |             | 
 | Build Form                |    H     |      3HR       |             |
 | Build Receipt             |    H     |      2HR       |             |    
-| Render Menu Items.        |    H     |      3HR       |             |    
+| CSS/Style all components  |    H     |      8HR       |             |  
+| MVP items                 |    M     |      8HR       |             |   
+| Total                     |          |      31HR      |             |  
+ 
 
 
 
 ## SWOT Analysis
 
 ### Strengths:
-
+-JS logic
 ### Weaknesses:
 -CSS, Styling 
 
 ### Opportunities:
-
+-I can see this as the backbone of an app a real reastaurant can use
 
 ### Threats:
--
+-I don't see a any at the moment (I'm sure I'll eat my words)
