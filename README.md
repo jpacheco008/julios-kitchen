@@ -20,7 +20,8 @@ This application is for the user to keep track of all the orders being placed. C
             "fields": {
                 "picture": "https://i2.wp.com/www.eatthis.com/wp-content/uploads/2018/10/guacamole-mortar-pestle.jpg?resize=640%2C360&ssl=1",
                 "name": "Guacamole",
-                "description": "This Guacamole is the perfect start to any meal"
+                "description": "This Guacamole is the perfect start to any meal",
+                "type": "appetizer"
             },
             "createdTime": "2020-12-04T00:46:59.000Z"
         },
@@ -28,13 +29,24 @@ This application is for the user to keep track of all the orders being placed. C
             "id": "rec2f7SrFn94o2C26",
             "fields": {
                 "picture": "https://assets.bonappetit.com/photos/58a34e1df12ac6e639bf24ae/16:9/w_2560%2Cc_limit/argentinian-beef-empanadas.jpg",
+                "name": "Argentinian Beef Empanadas",
                 "description": "These Argentinian empanadas are so good you'll want them as a full meal",
-                "name": "Argentinian Beef Empanadas"
+                "type": "appetizer"
             },
             "createdTime": "2020-12-04T00:46:59.000Z"
+        },
+        {
+            "id": "recysCsvahzUGzuyG",
+            "fields": {
+                "name": "Irish Beef Stew",
+                "description": "A bowl of hearty beef and roof vegetables stew made with red wine for a fantastic flavor",
+                "picture": "https://www.simplyrecipes.com/wp-content/uploads/2015/03/irish-beef-stew-horiz-a2-1800.jpg",
+                "type": "appetizer"
+            },
+            "createdTime": "2020-12-04T20:15:18.000Z"
         }
     ],
-    "offset": "rec2f7SrFn94o2C26"
+    "offset": "recysCsvahzUGzuyG"
 }
 {
     "records": [
@@ -48,18 +60,27 @@ This application is for the user to keep track of all the orders being placed. C
             "createdTime": "2020-12-04T13:47:24.000Z"
         },
         {
-            "id": "recozEpWvnb7FJeTQ",
-            "fields": {},
-            "createdTime": "2020-12-04T13:47:24.000Z"
+            "id": "recaFeSp4cT7uClHm",
+            "fields": {
+                "item": "Strawberries Romanoff",
+                "order-name": "Stephanie",
+                "order-number": "002"
+            },
+            "createdTime": "2020-12-04T20:49:55.000Z"
         },
         {
-            "id": "reclFxeh88wqtKPbx",
-            "fields": {},
-            "createdTime": "2020-12-04T13:47:24.000Z"
+            "id": "recIx8wtZ1d7Zy6Tj",
+            "fields": {
+                "item": "Irish Beef Stew",
+                "order-name": "Nawal",
+                "order-number": "003"
+            },
+            "createdTime": "2020-12-04T20:51:44.000Z"
         }
     ],
-    "offset": "reclFxeh88wqtKPbx"
+    "offset": "recIx8wtZ1d7Zy6Tj"
 }
+
 ```
 
 ### MVP/PostMVP
