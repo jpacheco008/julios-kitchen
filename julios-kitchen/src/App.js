@@ -12,6 +12,7 @@ import './App.css';
 function App() {
 
   const [data, setData] = useState([])
+  const [records, setRecords] = useState([])
   const [toggleFecth, setToggleFetch] = useState(false)
 
 
@@ -22,6 +23,7 @@ function App() {
       console.log(resp)
       console.log(posting)
       setData(resp.data.records);
+      setRecords(posting.data.records);
     }
     getMenu();
   }, [toggleFecth])
@@ -34,11 +36,13 @@ function App() {
           <Menu menu={info} key={info.id} setToggleFetch={setToggleFetch}/>
         ))}
       </Route>
-      <Route to="/new">
-        <Order setToggleFetch={setToggleFetch}/>
+      <Route path="/order">
+          <Order setToggleFetch={setToggleFetch}/>         
       </Route>
-      <Route to="recipt">
-        <Recipt setToggleFetch={setToggleFetch}/>
+      <Route path="/recipt">
+        {records.map((recipts) => (
+          <Recipt recipts={recipts} key={recipts.id} setToggleFetch={setToggleFetch}/>
+        ))}
       </Route>
       <Footer />
     </div>
