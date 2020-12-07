@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
 
-export default class Order extends Component {
-  render() {
+
+export default function Order() {
+  
     return (
       <div>
         
       </div>
     )
-  }
+  
 }

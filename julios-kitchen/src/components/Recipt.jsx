@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
 
-export default class Recipt extends Component {
-  render() {
+
+export default function Recipt() {
+ 
     return (
       <div>
         
       </div>
     )
-  }
+  
 }
