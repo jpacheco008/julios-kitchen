@@ -1,14 +1,29 @@
-
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 export default function Header() {
-  
-    return (
-      <div>
-        <Link to="/">Home</Link>
-        <Link to="/order">Place Order</Link>
-        <Link to="/recipt">Recipt</Link>
-      </div>
-    )
-  
+  return (
+    <div className="Header">
+      <Link
+        to="/"
+        style={{ textDecoration: "none", color: "white" }}
+        className="links"
+      >
+        Home
+      </Link>
+      <Link
+        to="/order"
+        style={{ textDecoration: "none", color: "white" }}
+        className="links"
+      >
+        Place Order
+      </Link>
+      <Link
+        to="/recipt"
+        style={{ textDecoration: "none", color: "white" }}
+        className="links"
+      >
+        Recipt
+      </Link>
+    </div>
+  );
 }

@@ -22,8 +22,6 @@ function App() {
     const getMenu = async () => {
       const resp = await axios.get(baseURL, config);
       const posting = await axios.get(postURL, config)
-      console.log(resp)
-      console.log(posting)
       setData(resp.data.records);
       setRecords(posting.data.records);
     }
@@ -34,7 +32,6 @@ function App() {
     <div className="App">
       <Header />
       <Route exact path="/">
-          {/* <Menu menu={info} key={info.id} setToggleFetch={setToggleFetch}/> */}
           <Appetizers menu={data} key={data.id} setToggleFetch={setToggleFetch}/>
           <Entrees menu={data} key={data.id} setToggleFetch={setToggleFetch}/>         
           <Desserts menu={data} key={data.id} setToggleFetch={setToggleFetch}/>

@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { useHistory, useParams } from "react-router-dom";
+import { useState } from "react";
+import { useHistory } from "react-router-dom";
 import axios from "axios";
 import { postURL, config } from "../services";
 
@@ -7,8 +7,6 @@ export default function Order(props) {
 
   const [orderName, setOrderName] = useState("");
   const [item, setItem] = useState([]);
-  
-  // const params = useParams();
   const history = useHistory();
 
   const handleSubmit = async (e) => {
