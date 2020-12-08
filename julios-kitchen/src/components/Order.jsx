@@ -2,13 +2,14 @@ import { useEffect, useState } from "react";
 import { useHistory, useParams } from "react-router-dom";
 import axios from "axios";
 import { postURL, config } from "../services";
+import Appetizers from "./Appetizers"
 
 export default function Order(props) {
 
   const [orderName, setOrderName] = useState("");
   const [item, setItem] = useState("");
   const [orderNumber, setOrderNumber] = useState("");
-
+  // let counter = 0;
   // const params = useParams();
   const history = useHistory();
 
@@ -24,12 +25,40 @@ export default function Order(props) {
     props.setToggleFetch((prev) => !prev);
     history.push("/")
     
+    // counter++;
   }
   
   return (
     <div>
-
-   
+      <div>
+        {props.menu.map((info) => {
+          if (info.fields.type === "appetizer") {
+            return (
+              <div>
+                <h5>{info.fields.name}</h5>
+              </div>
+            )
+          }else{return null}
+        })}
+        {props.menu.map((info) => {
+          if (info.fields.type === "entree") {
+            return (
+              <div>
+                <h5>{info.fields.name}</h5>
+              </div>
+            )
+          }else{return null}
+        })}
+        {props.menu.map((info) => {
+          if (info.fields.type === "dessert") {
+            return (
+              <div>
+                <h5>{info.fields.name}</h5>
+              </div>
+            )
+          }else{return null}
+        })}
+      </div>
       <form onSubmit={handleSubmit}>
         <label htmlFor="orderName">Costumer Name</label>
         <input
@@ -54,6 +83,7 @@ export default function Order(props) {
         />
         <button type="submit">Place Order</button>
       </form>
+      
     </div>
     )
   

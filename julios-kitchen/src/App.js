@@ -3,9 +3,11 @@ import axios from "axios";
 import { baseURL, config, postURL } from "./services";
 import { Route } from "react-router-dom";
 import Header from "./components/Header";
-import Menu from "./components/Menu";
 import Order from "./components/Order";
 import Recipt from "./components/Recipt";
+import Appetizers from "./components/Appetizers";
+import Entrees from "./components/Entrees";
+import Desserts from "./components/Desserts";
 import Footer from "./components/Footer"
 import './App.css';
 
@@ -32,12 +34,13 @@ function App() {
     <div className="App">
       <Header />
       <Route exact path="/">
-        {data.map((info) => (
-          <Menu menu={info} key={info.id} setToggleFetch={setToggleFetch}/>
-        ))}
+          {/* <Menu menu={info} key={info.id} setToggleFetch={setToggleFetch}/> */}
+          <Appetizers menu={data} key={data.id} setToggleFetch={setToggleFetch}/>
+          <Entrees menu={data} key={data.id} setToggleFetch={setToggleFetch}/>         
+          <Desserts menu={data} key={data.id} setToggleFetch={setToggleFetch}/>
       </Route>
       <Route path="/order">
-          <Order setToggleFetch={setToggleFetch}/>         
+        <Order menu={data} setToggleFetch={setToggleFetch}/>         
       </Route>
       <Route path="/recipt">
         {records.map((recipts) => (
