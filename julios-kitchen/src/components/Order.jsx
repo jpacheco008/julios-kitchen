@@ -2,12 +2,11 @@ import { useEffect, useState } from "react";
 import { useHistory, useParams } from "react-router-dom";
 import axios from "axios";
 import { postURL, config } from "../services";
-import Appetizers from "./Appetizers"
 
 export default function Order(props) {
 
   const [orderName, setOrderName] = useState("");
-  const [item, setItem] = useState("");
+  const [item, setItem] = useState({});
   const [orderNumber, setOrderNumber] = useState("");
   // let counter = 0;
   // const params = useParams();
@@ -30,35 +29,6 @@ export default function Order(props) {
   
   return (
     <div>
-      <div>
-        {props.menu.map((info) => {
-          if (info.fields.type === "appetizer") {
-            return (
-              <div>
-                <h5>{info.fields.name}</h5>
-              </div>
-            )
-          }else{return null}
-        })}
-        {props.menu.map((info) => {
-          if (info.fields.type === "entree") {
-            return (
-              <div>
-                <h5>{info.fields.name}</h5>
-              </div>
-            )
-          }else{return null}
-        })}
-        {props.menu.map((info) => {
-          if (info.fields.type === "dessert") {
-            return (
-              <div>
-                <h5>{info.fields.name}</h5>
-              </div>
-            )
-          }else{return null}
-        })}
-      </div>
       <form onSubmit={handleSubmit}>
         <label htmlFor="orderName">Costumer Name</label>
         <input
@@ -67,13 +37,58 @@ export default function Order(props) {
           value={orderName}
           onChange={(e) => setOrderName(e.target.value)}
         />
-        <label htmlFor="item">Item</label>
-        <input
+        <div>
+        {props.menu.map((info) => {
+          if (info.fields.type === "appetizer") {
+            return (
+              <div>
+                <input
           name= "item"
-          type="text"
+          type="checkbox"
           value={item}
-          onChange={(e) => setItem(e.target.value)}
-        />
+          onChange={(e) => setItem(info.fields.name)}
+          />
+          <label htmlFor="item">{info.fields.name}</label> 
+              </div>
+            )
+          }else{return null}
+        })}
+        </div>
+        <div>
+        {props.menu.map((info) => {
+          if (info.fields.type === "entree") {
+            return (
+              <div>
+                <input
+          name= "item"
+          type="checkbox"
+          value={item}
+          onChange={(e) => setItem(info.fields.name)}
+          />
+          <label htmlFor="item">{info.fields.name}</label> 
+              </div>
+            )
+          }else{return null}
+        })}
+        </div>
+        <div>
+        {props.menu.map((info) => {
+          if (info.fields.type === "dessert") {
+            return (
+              <div>
+                <input
+          name= "item"
+          type="checkbox"
+          value={item}
+          onChange={(e) => setItem(info.fields.name)}
+          />
+          <label htmlFor="item">{info.fields.name}</label> 
+              </div>
+            )
+          }else{return null}
+        })}
+        </div>
+  
         <label htmlFor="orderNumber">Number</label>
         <input
           name= "orderNumber"
