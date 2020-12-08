@@ -6,9 +6,8 @@ import { postURL, config } from "../services";
 export default function Order(props) {
 
   const [orderName, setOrderName] = useState("");
-  const [item, setItem] = useState({});
-  const [orderNumber, setOrderNumber] = useState("");
-  // let counter = 0;
+  const [item, setItem] = useState([]);
+  
   // const params = useParams();
   const history = useHistory();
 
@@ -16,15 +15,12 @@ export default function Order(props) {
     e.preventDefault();
     const data = {
       orderName,
-      item,
-      orderNumber,
+      item: JSON.stringify({0: item}),
     };
     
     await axios.post(postURL, { fields: data }, config); 
     props.setToggleFetch((prev) => !prev);
     history.push("/")
-    
-    // counter++;
   }
   
   return (
@@ -46,7 +42,7 @@ export default function Order(props) {
           name= "item"
           type="checkbox"
           value={item}
-          onChange={(e) => setItem(info.fields.name)}
+          onChange={(e) => setItem([...item, info.fields.name])}
           />
           <label htmlFor="item">{info.fields.name}</label> 
               </div>
@@ -63,7 +59,7 @@ export default function Order(props) {
           name= "item"
           type="checkbox"
           value={item}
-          onChange={(e) => setItem(info.fields.name)}
+          onChange={(e) => setItem([...item, info.fields.name])}
           />
           <label htmlFor="item">{info.fields.name}</label> 
               </div>
@@ -80,7 +76,7 @@ export default function Order(props) {
           name= "item"
           type="checkbox"
           value={item}
-          onChange={(e) => setItem(info.fields.name)}
+          onChange={(e) => setItem([...item, info.fields.name])}
           />
           <label htmlFor="item">{info.fields.name}</label> 
               </div>
@@ -88,14 +84,6 @@ export default function Order(props) {
           }else{return null}
         })}
         </div>
-  
-        <label htmlFor="orderNumber">Number</label>
-        <input
-          name= "orderNumber"
-          type="text"
-          value={orderNumber}
-          onChange={(e) => setOrderNumber(e.target.value)}
-        />
         <button type="submit">Place Order</button>
       </form>
       
