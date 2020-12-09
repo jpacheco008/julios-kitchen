@@ -24,19 +24,23 @@ export default function Order(props) {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="orderName">Costumer Name</label>
+        <div className="name-input">
+        <label htmlFor="orderName">Customer Name</label>
         <input
           name= "orderName"
           type="text"
           value={orderName}
           onChange={(e) => setOrderName(e.target.value)}
-        />
-        <div>
+          />
+          </div>
+        <div className="orders">
+        <div className="type-order">
+          <h2 className="menu-title">Appetizers</h2>
         {props.menu.map((info) => {
           if (info.fields.type === "appetizer") {
             return (
-              <div>
-                <input
+              <div key={info.id}>
+                <input className="order-input"
           name= "item"
           type="checkbox"
           value={item}
@@ -47,13 +51,14 @@ export default function Order(props) {
             )
           }else{return null}
         })}
-        </div>
-        <div>
+          </div>
+        <div className="type-order">
+          <h2 className="menu-title">Entrees</h2>
         {props.menu.map((info) => {
           if (info.fields.type === "entree") {
             return (
-              <div>
-                <input
+              <div key={info.id}>
+                <input className="order-input"
           name= "item"
           type="checkbox"
           value={item}
@@ -64,13 +69,14 @@ export default function Order(props) {
             )
           }else{return null}
         })}
-        </div>
-        <div>
+          </div>
+        <div className="type-order">
+          <h2 className="menu-title">Desserts</h2>
         {props.menu.map((info) => {
           if (info.fields.type === "dessert") {
             return (
-              <div>
-                <input
+              <div key={info.id}>
+                <input className="order-input"
           name= "item"
           type="checkbox"
           value={item}
@@ -82,7 +88,10 @@ export default function Order(props) {
           }else{return null}
         })}
         </div>
+        </div>
+        <div className="order-button">
         <button type="submit">Place Order</button>
+        </div>
       </form>
       
     </div>

@@ -3,8 +3,8 @@
 export default function Footer() {
   
     return (
-      <div>
-        <p>Julio Pacheco</p>
+      <div className="Footer">
+        <p className="footer-text">Made by: Julio Pacheco</p>
       </div>
     )
   

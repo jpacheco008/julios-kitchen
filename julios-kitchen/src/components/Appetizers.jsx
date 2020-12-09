@@ -12,7 +12,7 @@ export default function Appetizers(props) {
             <div className="menu-section" key={info.id}>
               
                 <div className="item-info">
-                <h5 className="item">{info.fields.name}</h5>
+                <h5 className="home-item">{info.fields.name}</h5>
               <em className="description">{info.fields.description}</em>
                 </div>
                 <img className="pictures" src={info.fields.picture} alt=""></img>

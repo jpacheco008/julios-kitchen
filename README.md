@@ -1,6 +1,6 @@
 # Julio's Kitchen
 
-URL TBD
+URL https://pensive-mayer-03c92a.netlify.app
 
 ## Project Description
 This application is for the user to keep track of all the orders being placed. Costumers will place their orders from a menu rendered from a database and after making their selections the order will be added to a second database. The second recive the name of the item and a unique number provided by a counter at submission. 
@@ -99,10 +99,10 @@ This application is for the user to keep track of all the orders being placed. C
 | Day      | Deliverable                                | Status   |
 | -------- | ------------------------------------------ | -------- |
 |  Dec 4-6 | Proposal Approval / AirTable setup         |Completed |
-|  Dec 7   | Render and connect database to app         |Incomplete|
-|  Dec 8   | Functional MVP                             |Incomplete|
-|  Dec 9   | Styling/MVP                                |Incomplete|
-|  Dec 10  | MVP                                        |Incomplete|
+|  Dec 7   | Render and connect database to app         |Completed |
+|  Dec 8   | Functional MVP                             |Completed |
+|  Dec 9   | Styling/MVP                                |Completed |
+|  Dec 10  | Post MVP                                   |Incomplete|
 |  Dec 11  | Present                                    |Incomplete|
 
 ## Timeframes
@@ -111,12 +111,12 @@ This application is for the user to keep track of all the orders being placed. C
 | ------------------------- | :------: | :------------: | :---------: |
 | Proposal                  |    H     |      1HR       |     2HR     |        
 | Air Table build           |    H     |      3HR       |     2HR     |        
-| App setup                 |    H     |      1HR       |             |         
-| Connect App to Air Table  |    H     |      2HR       |             |         
-| Render Menu Items         |    H     |      3HR       |             | 
-| Build Form                |    H     |      3HR       |             |
-| Build Receipt             |    H     |      2HR       |             |    
-| CSS/Style all components  |    H     |      8HR       |             |  
+| App setup                 |    H     |      1HR       |    .5HR     |         
+| Connect App to Air Table  |    H     |      2HR       |    .5HR     |         
+| Render Menu Items         |    H     |      3HR       |     2HR     | 
+| Build Form                |    H     |      3HR       |     2HR     |
+| Build Receipt             |    H     |      2HR       |     2HR     |    
+| CSS/Style all components  |    H     |      8HR       |     5HR     |  
 | MVP items                 |    M     |      8HR       |             |   
 | Total                     |          |      31HR      |             |  
  
