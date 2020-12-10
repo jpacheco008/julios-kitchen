@@ -1,6 +1,6 @@
 import CanvasJSReact from "../canvasjs.react";
-var CanvasJS = CanvasJSReact.CanvasJS;
-var CanvasJSChart = CanvasJSReact.CanvasJSChart;
+
+let CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
 export default function Statistics(props) {
   let info = [];
@@ -14,7 +14,7 @@ export default function Statistics(props) {
       individuals.push(value);
     }
   });
-  console.log(individuals);
+
   let guacamoleCounter = 0;
   let empanadasCounter = 0;
   let stewCounter = 0;
@@ -52,7 +52,6 @@ export default function Statistics(props) {
       strawberriesCounter++;
     }
   }
-  console.log(strawberriesCounter);
 
   const options = {
     animationEnabled: true,
