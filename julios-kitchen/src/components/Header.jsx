@@ -24,6 +24,13 @@ export default function Header() {
       >
         Recipt
       </Link>
+      <Link
+        to="/statistics"
+        style={{ textDecoration: "none", color: "white" }}
+        className="links"
+      >
+        Statistics
+      </Link>
     </div>
   );
 }

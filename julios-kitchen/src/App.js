@@ -8,6 +8,7 @@ import Recipt from "./components/Recipt";
 import Appetizers from "./components/Appetizers";
 import Entrees from "./components/Entrees";
 import Desserts from "./components/Desserts";
+import Statistics from "./components/Statistics"
 import Footer from "./components/Footer"
 import './App.css';
 
@@ -43,6 +44,9 @@ function App() {
         {records.map((recipts) => (
           <Recipt recipts={recipts} key={recipts.id} setToggleFetch={setToggleFetch}/>
         ))}
+      </Route>
+      <Route path="/statistics">
+        < Statistics records={records} key={records.id} setToggleFetch={setToggleFetch} />     
       </Route>
       <Footer />
     </div>
