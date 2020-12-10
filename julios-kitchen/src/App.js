@@ -27,6 +27,16 @@ function App() {
     getMenu();
   }, [toggleFecth]);
 
+  function compare( a, b ) {
+    if ( a.fields.orderNumber < b.fields.orderNumber ){
+      return -1;
+    }
+    if ( a.fields.orderNumber > b.fields.orderNumber  ){
+      return 1;
+    }
+    return 0;
+  }
+  
   return (
     <div className="App">
       <Header />
@@ -39,7 +49,7 @@ function App() {
         <Order menu={data} setToggleFetch={setToggleFetch} />
       </Route>
       <Route path="/recipt">
-        {records.map((recipts) => (
+        {records.sort(compare).map((recipts) => (
           <Recipt
             recipts={recipts}
             key={recipts.id}

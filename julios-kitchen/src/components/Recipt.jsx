@@ -3,13 +3,14 @@ export default function Recipt(props) {
     props.recipts.fields.item[0] === "{"
       ? JSON.parse(props.recipts.fields.item)[0]
       : props.recipts.fields.item;
+
   return (
     <div className="recipt">
       <ul className="number-item">
         Order: {props.recipts.fields.orderNumber}{" "}
         {typeof items === "object"
-          ? items.map((item) => {
-              return <li className="item">{item}</li>;
+          ? items.map((item, i) => {
+              return <li className="item" key={`recipt${i}`}>{item}</li>;
             })
           : items}
       </ul>
