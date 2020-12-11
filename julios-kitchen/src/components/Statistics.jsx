@@ -7,6 +7,7 @@ export default function Statistics(props) {
     .map((stuff) => {
       return JSON.parse(stuff.fields.item)[0];
     })
+    //more efficient method from original (thanks Soleil)
     .reduce((a, c) => [...a, ...c], [])
     .reduce((a, c) => {
       if (!a[c]) {
@@ -20,10 +21,11 @@ export default function Statistics(props) {
     y,
   }));
 
+  //chart tempplate from chartJS
   const options = {
     animationEnabled: true,
     exportEnabled: true,
-    theme: "dark2", // "light1", "dark1", "dark2"
+    theme: "dark2",
     title: {
       text: "Dishes Ordered",
     },

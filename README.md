@@ -3,15 +3,21 @@
 URL https://pensive-mayer-03c92a.netlify.app
 
 ## Project Description
-This application is for the user to keep track of all the orders being placed. Costumers will place their orders from a menu rendered from a database and after making their selections the order will be added to a second database. The second recive the name of the item and a unique number provided by a counter at submission. 
+
+This application is for the user to keep track of all the orders being placed. Costumers will place their orders from a menu rendered from a database and after making their selections the order will be added to a second database. The second recive the name of the item and a unique number provided by a counter at submission.
+
 ## Wireframes
+
 ![Home](https://github.com/jpacheco008/julios-kitchen/blob/master/HomeWireFrame.png)
 ![Order](https://github.com/jpacheco008/julios-kitchen/blob/master/PlaceOrderWireFrame.png)
 ![Recipt](https://github.com/jpacheco008/julios-kitchen/blob/master/ReceiptWireFrame.png)
+
 ## Component Hierarchy
+
 ![Hierarchy](https://github.com/jpacheco008/julios-kitchen/blob/master/Julio's%20Kitchen.png)
 
 ## API and Data Sample
+
 ```
 {
     "records": [
@@ -86,51 +92,58 @@ This application is for the user to keep track of all the orders being placed. C
 ### MVP/PostMVP
 
 #### MVP
+
 -Navigatable links in between pages
 -Render Menu Items
 -Render place order form
 -Upload a single item order placed into second database
+
 #### PostMVP
+
 -A graphical display of most popular items, least favorite, ect
 -Add multiple items per order
 
 ## Project Schedule
 
-| Day      | Deliverable                                | Status   |
-| -------- | ------------------------------------------ | -------- |
-|  Dec 4-6 | Proposal Approval / AirTable setup         |Completed |
-|  Dec 7   | Render and connect database to app         |Completed |
-|  Dec 8   | Functional MVP                             |Completed |
-|  Dec 9   | Styling/MVP                                |Completed |
-|  Dec 10  | Post MVP                                   |Completed |
-|  Dec 11  | Present                                    |Incomplete|
+| Day     | Deliverable                        | Status     |
+| ------- | ---------------------------------- | ---------- |
+| Dec 4-6 | Proposal Approval / AirTable setup | Completed  |
+| Dec 7   | Render and connect database to app | Completed  |
+| Dec 8   | Functional MVP                     | Completed  |
+| Dec 9   | Styling/MVP                        | Completed  |
+| Dec 10  | Post MVP                           | Completed  |
+| Dec 11  | Present                            | Incomplete |
 
 ## Timeframes
 
-| Component                 | Priority | Estimated Time | Actual Time |
-| ------------------------- | :------: | :------------: | :---------: |
-| Proposal                  |    H     |      1HR       |     2HR     |        
-| Air Table build           |    H     |      3HR       |     2HR     |        
-| App setup                 |    H     |      1HR       |    .5HR     |         
-| Connect App to Air Table  |    H     |      2HR       |    .5HR     |         
-| Render Menu Items         |    H     |      3HR       |     2HR     | 
-| Build Form                |    H     |      3HR       |     3HR     |
-| Build Receipt             |    H     |      2HR       |     3HR     |    
-| CSS/Style all components  |    H     |      8HR       |     6HR     |  
-| MVP items                 |    M     |      8HR       |     5.5HR   |   
-| Total                     |          |      31HR      |     24.5HR  |  
- 
-
-
+| Component                | Priority | Estimated Time | Actual Time |
+| ------------------------ | :------: | :------------: | :---------: |
+| Proposal                 |    H     |      1HR       |     2HR     |
+| Air Table build          |    H     |      3HR       |     2HR     |
+| App setup                |    H     |      1HR       |    .5HR     |
+| Connect App to Air Table |    H     |      2HR       |    .5HR     |
+| Render Menu Items        |    H     |      3HR       |     2HR     |
+| Build Form               |    H     |      3HR       |     3HR     |
+| Build Receipt            |    H     |      2HR       |     3HR     |
+| CSS/Style all components |    H     |      8HR       |     6HR     |
+| MVP items                |    M     |      8HR       |    5.5HR    |
+| QA                       |    M     |      2HR       |     2HR     |
+| Total                    |          |      31HR      |   26.5HR    |
 
 ## SWOT Analysis
 
 ### Strengths:
+
 - JS logic
+
 ### Weaknesses:
-- CSS, Styling 
+
+- CSS, Styling
 
 ### Opportunities:
+
 - I can see this as the backbone of an app a real reastaurant can use
+
 ### Threats:
+
 - working with 2 different databases

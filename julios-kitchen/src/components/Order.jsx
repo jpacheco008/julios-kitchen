@@ -12,7 +12,7 @@ export default function Order(props) {
     e.preventDefault();
     const data = {
       orderName,
-      item: JSON.stringify({ 0: item }),
+      item: JSON.stringify({ 0: item }), //needed to stringigy so it could upload multiple items to airtable
     };
 
     await axios.post(postURL, { fields: data }, config);
@@ -42,9 +42,9 @@ export default function Order(props) {
                     <input
                       className="order-input"
                       name="item"
-                      type="checkbox"
+                      type="checkbox" //would like to make this a number in the future
                       value={item}
-                      onChange={(e) => setItem([...item, info.fields.name])}
+                      onChange={(e) => setItem([...item, info.fields.name])} //adding multiple items in the same state
                     />
                     <label htmlFor="item">{info.fields.name}</label>
                   </div>

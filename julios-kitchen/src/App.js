@@ -27,6 +27,8 @@ function App() {
     getMenu();
   }, [toggleFecth]);
 
+  //for sorting orders by number in receipt
+  
   function compare( a, b ) {
     if ( a.fields.orderNumber < b.fields.orderNumber ){
       return -1;

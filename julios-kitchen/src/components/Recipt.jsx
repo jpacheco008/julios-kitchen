@@ -2,7 +2,7 @@ export default function Recipt(props) {
   let items =
     props.recipts.fields.item[0] === "{"
       ? JSON.parse(props.recipts.fields.item)[0]
-      : props.recipts.fields.item;
+      : props.recipts.fields.item; //making the objects easier to read
 
   return (
     <div className="recipt">
@@ -10,7 +10,11 @@ export default function Recipt(props) {
         Order: {props.recipts.fields.orderNumber}{" "}
         {typeof items === "object"
           ? items.map((item, i) => {
-              return <li className="item" key={`recipt${i}`}>{item}</li>;
+              return (
+                <li className="item" key={`recipt${i}`}>
+                  {item}
+                </li>
+              ); //returning as list if multiple items in order
             })
           : items}
       </ul>
