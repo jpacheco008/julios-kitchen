@@ -22,7 +22,7 @@ export default function Header() {
         style={{ textDecoration: "none", color: "white" }}
         className="links"
       >
-        Recipt
+        Receipt
       </Link>
       <Link
         to="/statistics"

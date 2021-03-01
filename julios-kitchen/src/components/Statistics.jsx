@@ -21,7 +21,7 @@ export default function Statistics(props) {
     y,
   }));
 
-  //chart tempplate from chartJS
+  //chart tempplate from chart
   const options = {
     animationEnabled: true,
     exportEnabled: true,
